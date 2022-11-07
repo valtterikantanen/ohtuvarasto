@@ -21,6 +21,7 @@ class Varasto:
         return self.tilavuus - self.saldo
 
     def lisaa_varastoon(self, maara):
+        # negatiivista määrää ei voi lisätä
         if maara < 0:
             return
         if maara <= self.paljonko_mahtuu():
